@@ -7,9 +7,15 @@ This README file provides a comprehensive overview of the datasets used in the A
 ## Data Summary
 
 The dataset consists of three main files:
-1. **Training Images (`train_images.zip`)**: Contains 4,467 multispectral Sentinel-2 images for model training.
-2. **Training Labels (`train_answer.csv`)**: Provides AOD annotations corresponding to the training images.
-3. **Test Images (`test_images.zip`)**: Contains 1,489 Sentinel-2 images without labels, used for model evaluation.
+
+1. **Training Images (`train_images.zip`)**: Contains 4,467 multispectral Sentinel-2 images for model training.  
+   [Download `train_images.zip`](https://solafune-dev-v1.s3.us-west-2.amazonaws.com/competitions/aod_estimation/train_images.zip)
+
+2. **Training Labels (`train_answer.csv`)**: Provides Aerosol Optical Depth (AOD) annotations corresponding to the training images.  
+   [Download `train_answer.csv`](https://solafune-dev-v1.s3.us-west-2.amazonaws.com/competitions/aod_estimation/train_answer.csv)
+
+3. **Test Images (`test_images.zip`)**: Contains 1,489 Sentinel-2 images without labels, used for model evaluation.  
+   [Download `test_images.zip`](https://solafune-dev-v1.s3.us-west-2.amazonaws.com/competitions/aod_estimation/test_images.zip)
 
 ---
 
