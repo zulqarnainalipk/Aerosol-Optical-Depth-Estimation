@@ -1,0 +1,26 @@
+# Core packages
+numpy==1.23.5
+pandas==1.5.3
+
+# Image and geospatial processing
+rasterio==1.2.10          # For handling Sentinel-2 imagery
+geopandas==0.10.2         # For handling geospatial data
+scikit-image==0.19.3      # For additional image processing
+opencv-python-headless==4.6.0.66  # For image manipulation, headless version for server environments
+
+# Machine Learning
+scikit-learn==1.1.2       # For training and evaluating models
+
+# Data visualization
+matplotlib==3.5.3         # For plotting images and data
+seaborn==0.11.2           # For statistical data visualization
+
+# Environment and System
+tqdm==4.64.1              # For progress bars
+joblib==1.2.0             # For parallel processing (optional for large datasets)
+
+# Cloud storage (if accessing images directly from S3)
+boto3==1.24.28            # AWS SDK for Python, for accessing S3 if needed
+
+# Additional utilities
+pyproj==3.3.0             # For coordinate reference system transformations
