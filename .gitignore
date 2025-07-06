@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+
+# Virtual environment
+virtualenv/
+virtual-env/
+virtual_env/
+virtualenv-2.7/
+virtualenv-3.4/
+virtualenv-3.5/
+virtualenv-3.6/
+virtualenv-3.7/
+virtualenv-3.8/
+virtualenv-3.9/
+virtualenv-3.10/
+virtualenv-3.11/
+virtualenv-3.12/
+virtualenv-3.13/
+virtualenv-3.14/
+virtualenv-3.15/
+virtualenv-3.16/
+virtualenv-3.17/
+virtualenv-3.18/
+virtualenv-3.19/
+virtualenv-3.20/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data
+data/*.csv
+data/*.xlsx
+data/*.json
+
+# Models
+models/
+
+
