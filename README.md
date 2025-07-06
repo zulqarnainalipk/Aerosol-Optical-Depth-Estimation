@@ -1,6 +1,23 @@
-# CatBoost AOD Project
+# Aerosol-Optical-Depth-Estimation
 
-This repository contains a refactored version of a Jupyter notebook demonstrating the use of CatBoost for Anomaly/Outlier Detection (AOD). The original notebook has been modularized into a well-structured Python project, following best practices for maintainability, testability, and scalability.
+![Project Logo](AOD.png) <!-- Replace with actual image if available -->
+
+
+Aerosol Optical Depth (AOD) plays a pivotal role in understanding atmospheric conditions, climate dynamics, and public health risks associated with air quality. This project presents an innovative methodology for estimating AOD using multi-spectral data from the Sentinel-2 satellite system combined with advanced machine learning techniques.
+
+By leveraging hybrid feature engineering methods — including spectral ratios, wavelet decomposition, and texture analysis — we extracted meaningful features that capture the intricate spatial and spectral behavior of aerosols. A CatBoost Regressor was trained to model the relationship between these engineered features and corresponding AOD values. The model demonstrated robust performance, achieving a mean Pearson correlation coefficient of **0.9640 ± 0.0460** across 200-fold cross-validation.
+
+Key contributions of this approach include:
+
+- **Enhanced Feature Engineering**: Integration of wavelet-based features and Local Binary Patterns (LBP) significantly improved estimation accuracy.
+- **Effective Spectral Insights**: Spectral ratios involving visible and near-infrared bands, such as B3/B5 and B1/B8, were identified as strong predictors of aerosol scattering behavior.
+- **Improved Methodology**: Addresses limitations of traditional AOD estimation techniques, particularly those related to spatial resolution trade-offs and underutilization of spectral information.
+
+The proposed method demonstrates consistent performance across diverse environmental conditions, making it a valuable tool for environmental monitoring, climate modeling, and health-related policy development. Future work will focus on refining feature extraction strategies for complex environments and incorporating additional datasets to further enhance generalization and scalability.
+
+> For detailed research findings, [read the full paper here](https://acceleron.org.in/index.php/aaj/article/view/231)
+
+---
 
 ## Project Structure
 
@@ -24,52 +41,73 @@ catboost_aod_project/
 └── setup.py                # Project installation (optional, for larger projects)
 ```
 
+---
+
 ## Setup and Installation
 
-1.  **Clone the repository:**
+### Step-by-step instructions to get started:
 
-    ```bash
-    git clone https://github.com/your_username/catboost_aod_project.git
-    cd catboost_aod_project
-    ```
+1. **Clone the repository**
 
-2.  **Create a virtual environment (recommended):**
+   ```bash
+   git clone https://github.com/zulqarnainalipk/Aerosol-Optical-Depth-Estimation.git  
+   cd catboost_aod_project
+   ```
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
+2. **Create a virtual environment (recommended)**
 
-3.  **Install dependencies:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Install required dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
 
 ## Usage
 
-1.  **Place your raw data:**
+### 1. Prepare your dataset
 
-    Ensure your `catboost-depps-aod.csv` (or similarly named) data file is placed in the `data/raw/` directory.
+Place your dataset file (e.g., `catboost-depps-aod.csv` or similar) into the following directory:
 
-2.  **Run the AOD pipeline:**
+```bash
+data/raw/
+```
 
-    ```bash
-    python src/main.py
-    ```
+### 2. Run the AOD Estimation Pipeline
 
-    This script will load the data, preprocess it, train a CatBoost model, and evaluate its performance.
+Execute the main script to initiate the complete workflow:
+
+```bash
+python src/main.py
+```
+
+This script performs the following steps:
+- Loads and preprocesses the input data
+- Applies feature engineering
+- Trains a CatBoost regression model
+- Evaluates and reports model performance
+
+---
 
 ## Contributing
 
-Contributions are welcome! Please see `CONTRIBUTING.md` for details on how to contribute.
+Contributions are highly encouraged! Please report issues, or propose new features.
 
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-## Contact
-
-For any questions or feedback, please open an issue in this repository.
+---
 
 
+## Author
+
+**Zulqarnain Ali**  
+[LinkedIn Profile](https://www.linkedin.com/in/zulqarnainalipk/)  
+Feel free to reach out for collaborations, feedback, or questions regarding the project.
+
+---
+
+> Research Paper Link: [A CatBoost-Based Approach for Aerosol Optical Depth Estimation Using Multi-Spectral Sentinel-2 Data](https://acceleron.org.in/index.php/aaj/article/view/231)
